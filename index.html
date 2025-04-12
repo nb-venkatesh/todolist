@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        
+        <section class="input-section">
+            <input type="text" id="task-input" placeholder="Enter a new task...">
+            <button id="add-btn">Add Task</button>
+        </section>
+        
+        <section class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </section>
+        
+        <ul id="task-list"></ul>
+        
+        <div class="stats">
+            <p>Total tasks: <span id="total-count">0</span> | 
+               Completed: <span id="completed-count">0</span> | 
+               Remaining: <span id="remaining-count">0</span></p>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
